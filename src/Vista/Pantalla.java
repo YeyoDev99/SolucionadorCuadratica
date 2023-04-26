@@ -18,7 +18,7 @@ import java.awt.Color;
 @SuppressWarnings("unused")
 public class Pantalla {
 
-	private JFrame frame;
+	JFrame frame;
 	private JTextField txtNumeroA;
 	private JTextField txtNumeroB;
 	private JTextField txtNumeroC;
@@ -26,7 +26,7 @@ public class Pantalla {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -37,7 +37,7 @@ public class Pantalla {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the application.
@@ -51,6 +51,7 @@ public class Pantalla {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.setResizable(false);
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
