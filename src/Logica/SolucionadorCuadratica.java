@@ -42,13 +42,11 @@ public class SolucionadorCuadratica extends Cuadratica{
 					valorDentroDeRaiz = valorDentroDeRaiz * -1;
 					resultado = String.format("\n\tLas 2 soluciones son: X1= %.2f" , Math.sqrt(valorDentroDeRaiz)) + "i/" +  (2 * numeroA)
 							+  String.format(" y \n\tX2= %.2f" , -Math.sqrt(valorDentroDeRaiz) + "i/" , (2 * numeroA));
-					System.out.println(resultado);
 
 				}
 			} else if (numeroA != 0 & numeroB != 0 & numeroC == 0) {
-				resultado = String.format("\n\tLas 2 soluciones son: X1= " , (numeroB + Math.sqrt(Math.pow(numeroB, 2))) / (2 * numeroA))
-						+ String.format(" y \n\tX2= " , (numeroB - Math.sqrt(Math.pow(numeroB, 2)) / (2 * numeroA)));
-
+				resultado = String.format("\n\tLas 2 soluciones son: X1= %.2f" , (numeroB + Math.sqrt(Math.pow(numeroB, 2))) / (2 * numeroA))
+						+ String.format(" y \n\tX2= %.2f" , (numeroB - Math.sqrt(Math.pow(numeroB, 2)) / (2 * numeroA)));
 			} else if (numeroA != 0 & numeroB != 0 & numeroC != 0) {
 				if (valorDentroDeRaiz > 0) {
 					resultado = String.format("\n\tLas 2 soluciones son: X1= %.2f" , (numeroB + Math.sqrt(valorDentroDeRaiz)) / (2 * numeroA))

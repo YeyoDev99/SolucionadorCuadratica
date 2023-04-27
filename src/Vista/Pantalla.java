@@ -51,6 +51,7 @@ public class Pantalla {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.getContentPane().setBackground(new Color(255, 255, 128));
 		frame.setResizable(false);
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -108,6 +109,7 @@ public class Pantalla {
 		frame.getContentPane().add(lblSolucion);
 		
 		JButton btnCalcular = new JButton("Resolver");
+		btnCalcular.setForeground(new Color(0, 0, 0));
 		btnCalcular.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//realiza la multiplicacion de dos números
